@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pci_id=$(lspci -vnn | grep NVIDIA | cut -c1-7)
+pci_id=$(lspci -vnn | grep "Advanced Micro Devices\|NVIDIA" | cut -c1-7)
 vender_id=$(lspci -n)
 
 i=1
