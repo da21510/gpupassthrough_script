@@ -3,6 +3,8 @@
 pci_id=$(lspci -vnn | grep "Advanced Micro Devices\|NVIDIA" | cut -c1-7)
 vender_id=$(lspci -n)
 
+lspci -vnn | grep "Advanced Micro Devices\|NVIDIA"
+
 i=1
 j=1
 sum=0
