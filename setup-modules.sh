@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sed -i '/GRUB_CMDLINE_LINUX_DEFAULT/s/quiet/quiet intel_iommu=on/g' /etc/default/grub
+sed -i '/GRUB_CMDLINE_LINUX_DEFAULT/s/quiet/quiet intel_iommu=pt pcie_aspm=off/g' /etc/default/grub
 update-grub
 
 echo vfio >> /etc/modules
